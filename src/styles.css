@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f4f4;
+    --yellow-color: #f1c40f;
+    --text-color: #000000;
+    --font-style: 'Roboto, sans-serif';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,10 @@
+<section class="game-card" > 
+    <div class="game-card-header">
+        <h2>{{ game().title }}</h2>
+    </div>
+    <div class="game-card-body">
+        <p>{{ game().price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL'}) }}</p>
+        <p>Gêneros: {{ getGenresNames() }}</p>
+    </div>
+    <span class="game-card-fav" (click)="swapFavorite()">{{ game().isFavorite ? '\u2605' : '\u2606' }}</span>
+</section>

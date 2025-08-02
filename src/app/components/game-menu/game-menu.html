@@ -1,0 +1,18 @@
+
+<section class="game-menu">
+    @if (title() !== undefined) {
+        <h2 class="game-menu-title">{{title()}}</h2>
+    }
+
+    @if (games().length === 0) {
+        <p class="game-menu-empty">Nenhum jogo encontrado.</p>
+    }
+    <ul class="game-menu-list">
+        
+        @for (game of games(); track game.id) {
+            <li class="game-menu-item">
+                <slgames-game [game]="game"></slgames-game>
+            </li>
+        }
+    </ul>
+</section>

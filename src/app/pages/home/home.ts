@@ -1,15 +1,15 @@
 import { Component, effect, inject, signal } from '@angular/core';
-import { components } from './components';
-import { GameModel } from './components/game/game-model';
-import { GameService } from './services/game-service/game-service';
+import { components } from '../../components';
+import { GameModel } from '../../components/game/game-model';
+import { GameService } from '../../services/game-service/game-service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'slgames-home',
   imports: components,
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  templateUrl: './home.html',
+  styleUrl: './home.css'
 })
-export class App {
+export class Home {
   gameService = inject(GameService);
   initialGames = signal<GameModel[]>([]);
   protected readonly title = signal('slgames-angular');
@@ -23,6 +23,4 @@ export class App {
       });
     });
   }
-
-  
 }

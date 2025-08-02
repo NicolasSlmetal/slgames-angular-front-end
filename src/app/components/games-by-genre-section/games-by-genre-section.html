@@ -1,0 +1,13 @@
+<section class="games-by-genre-section">
+    @for (genre of getGamesByGenreMap().keys(); track genre) {
+        <hr>
+        @if (getGamesByGenreMap().get(genre)?.length === 0) {
+            <p class="game-menu-empty">Nenhum jogo encontrado.</p>
+        }
+        <slgames-game-menu [title]="genre" [games]="getGamesByGenreMap().get(genre) || []" [ngClass]="genre">
+            
+
+        </slgames-game-menu>
+            
+    }
+</section>
