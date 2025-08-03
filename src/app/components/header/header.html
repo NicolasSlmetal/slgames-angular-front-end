@@ -4,9 +4,9 @@
     </div>
     <nav class="header-nav">
         <ul class="header-nav-list">
-            <li><a class="header-link">Home</a></li>
-            <li><a class="header-link">Login</a></li>
-            <li><a class="header-link">Sobre</a></li>
+            <li class="header-nav-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ><a routerLink="/" class="header-link">Home</a></li>
+            <li class="header-nav-item" routerLink="/login" routerLinkActive="active"><a routerLink="/login" class="header-link">Login</a></li>
+            <li class="header-nav-item" routerLink="/about" routerLinkActive="active"><a routerLink="/about" class="header-link">Sobre</a></li>
         </ul>
     </nav>
 </header>

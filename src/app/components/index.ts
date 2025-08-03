@@ -1,3 +1,4 @@
+import { DataInput } from "./data-input/data-input";
 import { Footer } from "./footer/footer";
 import { GameMenu } from "./game-menu/game-menu";
 import { Game } from "./game/game";
@@ -8,5 +9,6 @@ export const components = [
     Footer,
     Header,
     GameMenu,
-    GamesByGenreSection
+    GamesByGenreSection,
+    DataInput
 ]

@@ -43,7 +43,11 @@
 .header-nav-list li:hover {
     background-color: var(--background-color);
     border-radius: 8px;
-    
+}
+
+.active {
+    background-color: var(--background-color);
+    border-radius: 8px;
 }
 
 .header-link {

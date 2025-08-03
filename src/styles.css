@@ -4,6 +4,8 @@
     --background-color: #f4f4f4;
     --yellow-color: #f1c40f;
     --text-color: #000000;
+    --disabled-background-color: #e0e0e0;
+    --disabled-text-color: #a0a0a0;
     --font-style: 'Roboto, sans-serif';
 }
 
@@ -20,7 +22,5 @@ a {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100vh;
 }

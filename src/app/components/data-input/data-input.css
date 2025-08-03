@@ -1,0 +1,26 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.input-label {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.input-field {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--input-background-color);
+}
+
+.disabled {
+    background-color: var(--disabled-background-color);
+    color: var(--disabled-text-color);
+    cursor: not-allowed;
+}

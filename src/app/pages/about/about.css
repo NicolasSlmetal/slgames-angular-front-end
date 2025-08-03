@@ -1,0 +1,26 @@
+.about-page {
+    padding: 20px;
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.about-text {
+    font-size: 30px;
+    text-align: justify;
+    height: 100%;
+}
+
+.link-email {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.link-email:hover {
+    text-decoration: underline;
+}

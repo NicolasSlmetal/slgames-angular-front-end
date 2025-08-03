@@ -1,28 +1,15 @@
 import { Component, effect, inject, signal } from '@angular/core';
 import { components } from './components';
-import { GameModel } from './components/game/game-model';
-import { GameService } from './services/game-service/game-service';
+
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: components,
+  imports: [RouterOutlet, ...components],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  gameService = inject(GameService);
-  initialGames = signal<GameModel[]>([]);
-  protected readonly title = signal('slgames-angular');
-
-  constructor() {
-    effect(() => {
-      this.gameService.fetchGames().then(games => {
-        this.initialGames.set(games);
-      }).catch(error => {
-        console.error('Error fetching games:', error);
-      });
-    });
-  }
-
+  
   
 }
